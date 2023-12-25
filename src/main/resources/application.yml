@@ -1,0 +1,21 @@
+app:
+  postgre:
+    datasource:
+      class-driver: org.postgresql.Driver
+      username: admin
+      password: admin
+      url: jdbc:postgresql://192.168.99.1:5432/postgre_db
+  neo:
+    datasource:
+      class-driver: org.neo4j.Driver
+      name: neo4j
+      username: neo4j
+      password: password
+      url: neo4j://192.168.99.1:7687
+  mongo:
+    datasource:
+      class-driver: org.mongodb.Driver
+      database: sema
+      username: admin
+      password: pass
+      url: mongodb://admin:password@127.0.0.1:27017/sema?authSource=admin
